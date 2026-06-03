@@ -634,7 +634,7 @@ with tab3:
         # ── Best model summary ────────────────────────────────────────────────
     best_name = max(results, key=lambda n: results[n]["acc"])
     best_acc  = results[best_name]["acc"]
-      st.markdown(f"""
+    st.markdown(f"""
         <div style="
             background: linear-gradient(135deg, #1a0a2e, #0a1628);
             border: 1px solid #7c3aed;
