@@ -279,8 +279,7 @@ else:
         st.markdown("<br>", unsafe_allow_html=True)
 
         run_btn = st.button(
-            "▶ Run Analysis",
-            width="stretch"
+            "▶ Run Analysis"
         )
 
     # Dataset preview
@@ -292,7 +291,7 @@ else:
 
         st.dataframe(
             df_raw.head(10),
-            width="stretch"
+            use_container_width=True
         )
 
     # Run analysis
@@ -461,7 +460,7 @@ else:
 
             st.dataframe(
                 lb_df,
-                width="stretch"
+                use_container_width=True
             )
 
         # TAB 2
@@ -481,7 +480,7 @@ else:
 
                     st.dataframe(
                         rep_df,
-                        width="stretch"
+                        use_container_width=True
                     )
 
                 with c2:
@@ -492,7 +491,7 @@ else:
 
                     st.dataframe(
                         cm_df,
-                        width="stretch"
+                        use_container_width=True
                     )
 
                 st.divider()
@@ -672,32 +671,15 @@ else:
         best_acc = results[best_name]["acc"]
 
         st.markdown(f"""
-        <div style="
-            background: linear-gradient(135deg, #1a0a2e, #0a1628);
-            border: 1px solid #7c3aed;
-            border-radius: 12px;
-            padding: 1.5rem;
-            margin-top: 1.5rem;
-            text-align: center;
-        ">
-            <div style="
-                font-family:'Space Mono',monospace;
-                font-size:1.8rem;
-                color:#e2e8f0;
-                font-weight:700;
-            ">
-                🏆 {best_name}
-            </div>
-
-            <div style="
-                color:#06b6d4;
-                font-size:1.1rem;
-            ">
-                Accuracy: <b>{best_acc:.2%}</b>
-            </div>
-        </div>
-        """, unsafe_allow_html=True)
-
+<div style="background: linear-gradient(135deg, #1a0a2e, #0a1628); border: 1px solid #7c3aed; border-radius: 12px; padding: 1.5rem; margin-top: 1.5rem; text-align: center;">
+    <div style="font-family:'Space Mono',monospace; font-size:1.8rem; color:#e2e8f0; font-weight:700;">
+        🏆 {best_name}
+    </div>
+    <div style="color:#06b6d4; font-size:1.1rem;">
+        Accuracy: <b>{best_acc:.2%}</b>
+    </div>
+</div>
+""", unsafe_allow_html=True)
 # Footer
 st.markdown("""
 <div style="
