@@ -94,33 +94,38 @@ section[data-testid="stSidebar"] * {
 # ── Hero Header ───────────────────────────────────────────────────────────────
 st.markdown("""
 <div style="
-    background: linear-gradient(135deg, #12121a 0%, #1a0a2e 50%, #0a1628 100%);
-    border: 1px solid #2d2d3d;
-    border-radius: 16px;
-    padding: 2.5rem 2rem 2rem;
-    margin-bottom: 2rem;
+    background: linear-gradient(135deg,#12002f,#090016);
+    padding: 2rem;
+    border-radius: 24px;
+    border: 1px solid rgba(138,43,226,0.25);
+    box-shadow: 0 0 30px rgba(138,43,226,0.15);
 ">
-    <span style="
-        font-family: 'Space Mono', monospace;
-        font-size: 0.7rem;
-        color: #7c3aed;
-        letter-spacing: 0.2em;
-        text-transform: uppercase;
-    ">● MACHINE LEARNING STUDIO</span>
 
-    <h1 style="
-        font-family: 'Space Mono', monospace;
-        font-size: 2.4rem;
-        font-weight: 700;
-        margin: 0.4rem 0 0.6rem;
-        background: linear-gradient(135deg, #e2e8f0, #7c3aed, #06b6d4);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    ">AutoPredict AI 🔮</h1>
+<p style="
+    color:#8b5cf6;
+    letter-spacing:6px;
+    font-size:0.8rem;
+    margin-bottom:0.5rem;
+">
+• MACHINE LEARNING STUDIO
+</p>
 
-    <p style="color: #94a3b8;">
-        Upload any CSV → auto-detect target → train multiple models → get predictions.
-    </p>
+<h1 style="
+    font-family: 'Space Mono', monospace;
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin: 0.4rem 0 0.6rem;
+    background: linear-gradient(90deg,#a855f7,#3b82f6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+">
+AutoPredict AI 🔮
+</h1>
+
+<p style="color:#94a3b8;">
+Upload any CSV → auto-detect target → train ML models → visualize results instantly.
+</p>
+
 </div>
 """, unsafe_allow_html=True)
 
