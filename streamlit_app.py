@@ -364,7 +364,7 @@ else:
         )
     with col_right:
         st.markdown("<br>", unsafe_allow_html=True)
-        run_btn = st.button("▶ Run Analysis", use_container_width=True)
+        run_btn = st.button("▶ Run Analysis", width="stretch")
 
     # ── Data preview ─────────────────────────────────────────────────────────
     with st.expander("🔍 Dataset Preview", expanded=False):
