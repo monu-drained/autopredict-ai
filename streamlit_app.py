@@ -280,7 +280,7 @@ else:
 
         run_btn = st.button(
             "▶ Run Analysis",
-            use_container_width=True
+            width="stretch"
         )
 
     # Dataset preview
@@ -292,7 +292,7 @@ else:
 
         st.dataframe(
             df_raw.head(10),
-            use_container_width=True
+            width="stretch"
         )
 
     # Run analysis
@@ -461,7 +461,7 @@ else:
 
             st.dataframe(
                 lb_df,
-                use_container_width=True
+                width="stretch"
             )
 
         # TAB 2
@@ -481,7 +481,7 @@ else:
 
                     st.dataframe(
                         rep_df,
-                        use_container_width=True
+                        width="stretch"
                     )
 
                 with c2:
@@ -492,7 +492,7 @@ else:
 
                     st.dataframe(
                         cm_df,
-                        use_container_width=True
+                        width="stretch"
                     )
 
                 st.divider()
