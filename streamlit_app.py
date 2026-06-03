@@ -468,9 +468,9 @@ else:
 
         best_name = max(results, key=lambda n: results[n]["acc"])
         best_acc  = results[best_name]["acc"]
-        st.markdown(f"""<div style="background:linear-gradient(135deg,#1a0a2e,#0a1628);
-        border:1px solid #7c3aed;border-radius:12px;padding:1.5rem;
-        margin-top:1.5rem;text-align:center;">
-        <div style="font-family:'Space Mono',monospace;font-size:0.7rem;color:#7c3aed;
-        letter-spacing:0.15em;text-transform:uppercase;">🏆 Best Performing Model</div>
-        <div style="font-
+        best_html = (
+            "<div style='background:linear-gradient(135deg,#1a0a2e,#0a1628);"
+            "border:1px solid #7c3aed;border-radius:12px;padding:1.5rem;"
+            "margin-top:1.5rem;text-align:center;'>"
+            "<div style='font-family:Space Mono,monospace;font-size:0.7rem;color:#7c3aed;"
+            "letter-spacing:0.15em;text-transform:uppercase;'>🏆 Best Performing Mode
